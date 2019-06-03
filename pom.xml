@@ -147,5 +147,6 @@
 	</build>
 	<modules>
 		<module>jblog-jblog2</module>
+		<module>jblog-jblog3</module>
 	</modules>
 </project>
