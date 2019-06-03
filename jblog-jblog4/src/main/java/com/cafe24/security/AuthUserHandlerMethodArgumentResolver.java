@@ -21,9 +21,9 @@ public class AuthUserHandlerMethodArgumentResolver implements HandlerMethodArgum
 			NativeWebRequest webRequest, 
 			WebDataBinderFactory binderFactory) throws Exception {
 
-		if(supportsParameter(parameter)==false) {
-			return WebArgumentResolver.UNRESOLVED; // 난 이거 몰라
-		}
+//		if(supportsParameter(parameter)==false) {
+//			return WebArgumentResolver.UNRESOLVED; // 난 이거 몰라
+//		}
 		
 		// 내가 아는 파라미터라면 가져와서
 		HttpServletRequest request = 

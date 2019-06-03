@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
-@Configuration
+@Configuration 
 @PropertySource("classpath:com/cafe24/config/web/properties/multipart.properties")
 @EnableWebMvc
 public class FileuploadConfig extends WebMvcConfigurerAdapter {
@@ -31,7 +31,7 @@ public class FileuploadConfig extends WebMvcConfigurerAdapter {
 
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler(env.getProperty("uploadLocation")).addResourceLocations(env.getProperty("resourceMapping"));
+		registry.addResourceHandler(env.getProperty("resourceMapping")).addResourceLocations(env.getProperty("uploadLocation"));
 	}
 
 }
