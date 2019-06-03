@@ -68,4 +68,11 @@ public class UserController {
 		userService.deleteUser(id);
 		return "redirect:/user";
 	}
+	
+	@RequestMapping(value="/auth", method=RequestMethod.POST)
+	public void auth() {
+	}
+	@RequestMapping(value="/logout", method=RequestMethod.GET)
+	public void logout() {
+	}
 }

@@ -10,8 +10,8 @@
 	</typeAliases>
 
 	<mappers>
-		<mapper resource="mybatis/mapper/user.xml" />
-		<mapper resource="mybatis/mapper/blog.xml" />
-		<mapper resource="mybatis/mapper/category.xml" />
+		<mapper resource="com/cafe24/config/app/mybatis/mapper/user.xml" />
+		<mapper resource="com/cafe24/config/app/mybatis/mapper/blog.xml" />
+		<mapper resource="com/cafe24/config/app/mybatis/mapper/category.xml" />
 	</mappers>
 </configuration>
