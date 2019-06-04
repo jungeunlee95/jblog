@@ -3,8 +3,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>  
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<Link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/jblog.css">
-
 
 <h1 class="logo">JBlog</h1>
 <ul class="menu">
