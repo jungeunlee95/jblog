@@ -89,7 +89,7 @@ public class WebConfig implements WebMvcConfigurer {
 				.excludePathPatterns("/user/logout").excludePathPatterns("/assets/**");
 	} 
 
-	@Override
+	@Override 
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("assets/image/**").addResourceLocations("file:/jblog-uploads/");
 	}

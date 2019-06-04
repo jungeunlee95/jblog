@@ -18,7 +18,7 @@ public class FileuploadService {
 		String url = "";
 		try {
 			if(multipartFile.isEmpty()) {
-				return url;
+				return url; 
 			}
 			
 			String originalFilename = multipartFile.getOriginalFilename();
