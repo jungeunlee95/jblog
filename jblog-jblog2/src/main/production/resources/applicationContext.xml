@@ -36,7 +36,7 @@
 			value="jdbc:mariadb://192.168.1.52:3307/jblog" />
 		<property name="username" value="jblog" />
 		<property name="password" value="jblog" />
-	</bean>
+	</bean> 
 
 	<!-- MyBatis SqlSessionFactoryBean -->
 	<bean id="sqlSessionFactory"
