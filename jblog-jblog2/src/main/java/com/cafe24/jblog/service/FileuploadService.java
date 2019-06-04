@@ -38,7 +38,7 @@ public class FileuploadService {
 			os.write(fileData);
 			os.close();
 			
-			url = URL + SAVE_PATH + "/" + saveFileName;
+			url = URL + "/" + saveFileName;
 			
 		} catch (IOException e) {
 			throw new RuntimeException("Fileupload error" + e);

@@ -9,4 +9,4 @@ public class BootApp {
 		SpringApplication.run(BootApp.class, args);
 	}
 }
- 
+  
