@@ -91,7 +91,7 @@ public class WebConfig implements WebMvcConfigurer {
 
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("assets/images/**").addResourceLocations("file:/jblog-uploads/");
+		registry.addResourceHandler("assets/image/**").addResourceLocations("file:/jblog-uploads/");
 	}
 
 }
