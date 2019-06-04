@@ -12,7 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class FileuploadService {
 
 	private static final String SAVE_PATH = "/jblog-uploads"; // d드라이브
-	private static final String URL = "/image";
+	private static final String URL = "/images";
 	
 	public String restore(MultipartFile multipartFile) {
 		String url = "";
@@ -38,7 +38,7 @@ public class FileuploadService {
 			os.write(fileData);
 			os.close();
 			
-			url = URL + SAVE_PATH + "/" + saveFileName;
+			url = URL +  "/" + saveFileName;
 			
 		} catch (IOException e) {
 			throw new RuntimeException("Fileupload error" + e);

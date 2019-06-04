@@ -23,9 +23,9 @@ import com.cafe24.security.AuthLogoutInterceptor;
 import com.cafe24.security.AuthUserHandlerMethodArgumentResolver;
 import com.fasterxml.jackson.module.paramnames.ParameterNamesModule;
 
-//@Configuration
+@Configuration 
 public class WebConfig implements WebMvcConfigurer {
-
+ 
 	// Message Converter
 	@Bean
 	public MappingJackson2HttpMessageConverter mappingJackson2HttpMessageConverter() {
@@ -77,7 +77,7 @@ public class WebConfig implements WebMvcConfigurer {
 	@Bean
 	public AuthInterceptor authInterceptor() {
 		return new AuthInterceptor();
-	}
+	} 
 
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
@@ -87,7 +87,7 @@ public class WebConfig implements WebMvcConfigurer {
 
 		registry.addInterceptor(authInterceptor()).addPathPatterns("/**").excludePathPatterns("/user/auth")
 				.excludePathPatterns("/user/logout").excludePathPatterns("/assets/**");
-	}
+	} 
 
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
